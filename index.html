@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raaa._.mi Shop</title>
+	<style>
+	    a { text-decoration: none; color: #FFF; }
+	    a:visited { text-decoration: none; }
+	    a:hover { text-decoration: none; }
+	    a:focus { text-decoration: none; }
+	    a:hover, a:active { text-decoration: none; }
+	</style>
+	<script type="text/javascript">
+		function checkClick() {
+			$("input:checkbox[id='check']").removeAttr("checked"); 
+			return false;
+		}
+	 </script>
+	 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check">
+				<i class="icon ion-md-menu"></i>
+			</label>
+			
+			<label class="logo"><a href="#id-index">Raaa._.mi</a></label>
+			<ul>
+				<li><a href="#id-index" onclick="checkClick();">home</a></li>
+				<li><a href="#id-shop" onclick="checkClick();">Shop</a></li>
+				<li><a href="gallery.html" >Gallery</a></li>
+				<li><a href="" onclick="checkClick();">Introduce</a></li>
+				<li><a href="#id-insta" onclick="checkClick();">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="index" id="id-index">
+			<div class="container">
+				<div class="main-message">
+					<h1>Raaa._.mi Workspace</h1>
+					<p>라미작가의 작업공간입니다.</p>
+				</div>
+			</div>
+			
+		</section>
+		<section class="shop" id="id-shop">
+			<div class="container2">
+				<!--grid item#1-->
+				<div class="shop-grid">
+					<div class="shop-grid-item sticker">
+						<h1>Sticker</h1>
+					</div>
+					<!--grid item#2-->
+					<div class="shop-grid-item calender">
+						<h1>Calender</h1>
+					</div>
+					<!--grid item#3-->
+					<div class="shop-grid-item phone">
+						<h1>Phone</h1>
+					</div>
+					<!--grid item#4-->
+					<div class="shop-grid-item diary">
+						<h1>Diary</h1>
+					</div>
+					<!--grid item#5-->
+					<div class="shop-grid-item character">
+						<h1>Character</h1>
+					</div>
+					<!--grid item#6-->
+					<div class="shop-grid-item etc">
+						<h1>Etc</h1>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section class="insta" id="id-insta">
+			<div class="contact">
+				<div class="insta-text">
+					<h1>Follow Me!</h1>
+				</div>
+				<div class="insta-profile">
+					<img src="images/logo1.png" alt="">
+					<h3>@raaa._.mi</h3>
+				</div>
+				
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer">
+			<h4>Copyright ⓒ KimSoWon Corp. All rights reserved.</h4>
+		</div>
+	</footer>
+		
+
+	</main>
+
+</body>
+</html>

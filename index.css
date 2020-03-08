@@ -1,0 +1,275 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box; 
+}
+main{
+	position: relative;
+	z-index: -1;
+
+}
+.main-message{
+	position: relative;
+	color: #FFF;
+	padding: 20rem 0 0 5rem;
+
+}
+.main-message h1{
+	font-size: 3rem;
+}
+
+.main-message p{
+	font-size: 1.5rem;
+
+}
+header{
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+nav{
+	background: rgba(255,163,163,0.5);
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: #FFF;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.index{
+	width: 100%;
+	height: 100vh;
+	background: url("images/imagebg.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+a.active,a:hover{
+
+}
+#check{
+	display: none;
+}
+i{
+	float: right;
+	margin-right: 40px;
+	color: #FFF;
+	font-size: 40px;
+	line-height: 80px;
+	cursor: pointer;
+	display: none;
+}
+
+
+/*shop*/
+
+.shop{
+	position: relative;
+	padding: 0;
+}
+.container2{
+	text-align: center;
+	line-height: 200px;
+	font-size: 4rem;
+}
+
+.shop-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(60vh,1fr));
+	grid-template-rows: repeat(auto-fit,minmax(60vh,1fr));
+	color: #Fafafa;
+}
+
+.shop-grid-item{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 1;
+}
+.sticker{
+	opacity: 0.5;
+	background-image: url("images/image2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.calender{
+	opacity: 0.5;
+	background-image: url("images/image8.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.phone{
+	opacity: 0.5;
+	background-image: url("images/image9.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.diary{
+	opacity: 0.5;
+	background-image: url("images/image4.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.character{
+
+	opacity: 0.5;
+	background-image: url("images/image6.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.etc{
+	color: #000;
+	opacity: 0.5;
+	background-image: url("images/image7.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.shop-grid-item:hover{
+	opacity: 1;
+}
+.insta{	
+	position: relative;
+	padding:30vh 0;
+	width: 100%;
+	height: 90vh;
+	background-color: #efe0c4;
+	text-align: center;
+
+}	
+
+.insta-text{
+	margin: 0 0 3rem;
+	color: #fafafa;
+	font-size: 4rem;
+}
+.insta-profile img{
+	padding: 0;
+	width: 10rem;
+}
+.insta-profile  h3{
+	color: #fafafa;
+	font-size: 2rem;
+}
+footer{
+	position: relative;
+	background-color: #dddddd;
+	height: 5rem;
+}
+.footer{
+	line-height: 5rem;
+	text-align: center;
+	color: #fafafa;
+	font-size: 1rem;
+
+}
+
+
+@media (max-width: 1425px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	.container2{
+		font-size: 2rem;
+	}
+	.insta-text{
+		font-size: 2rem;
+	}
+	.insta{
+		padding: 15vh 0;
+	}
+	.insta-profile h3{
+		margin-top: 10vh;
+	}
+	.shop-grid{
+	grid-template-columns: repeat(auto-fit,minmax(35vh,1fr));
+	}
+	.shop-grid-item{
+		opacity: 1;
+	}
+
+}
+@media (max-width: 858px){
+	i{
+		display: block;
+
+	}
+	label.logo{
+		font-size: 25px;
+		padding: 0 25px;
+	}	
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgb(255,163,163,0.9);
+		top:80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+
+	}
+	nav ul li{
+		line-height: 30px;
+		margin: 50px 0;
+		display: block;
+	}
+	nav ul li a{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.footer h4{
+		font-size: 0.75rem;
+		line-height: 5rem;
+	}
+	#check:checked ~ ul{ 
+		left: 0;
+
+	}
+
+	.main-message{
+	position: relative;
+	color: #FFF;
+	padding: 20rem 0;
+	text-align: center;
+
+	}
+	.main-message h1{
+		font-size: 2rem;
+	}
+
+	.main-message p{
+		font-size: 1rem;
+
+	}
+
+
+}
